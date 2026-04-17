@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 
 const secretKey = process.env.JWT_SECRET || 'ecolink-secret-change-in-production';
-const accessExpiresIn = process.env.JWT_ACCESS_EXPIRES_IN || '15m';
+const accessExpiresIn = process.env.JWT_ACCESS_EXPIRES_IN || '1h';
 const refreshExpiresIn = process.env.JWT_REFRESH_EXPIRES_IN || '7d';
 
 /**

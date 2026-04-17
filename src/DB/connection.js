@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const connectDB = async () => {
-  const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/ecolink';
+  const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/Ecolink';
 
   try {
     await mongoose.connect(mongoURI);
