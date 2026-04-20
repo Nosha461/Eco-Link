@@ -2,7 +2,7 @@ import { asyncHandler } from '../../utils/error/index.js';
 import * as wasteService from './waste.service.js';
 
 export const create = asyncHandler(async (req, res) => {
-  const waste = await wasteService.createWaste(req.user, req.body);
+  const waste = await wasteService.addWaste(req.user, req.body);
   res.status(201).json({ success: true, data: waste });
 });
 

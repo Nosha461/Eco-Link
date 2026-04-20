@@ -36,3 +36,10 @@ export const isAuthenticated = async (req, res, next) => {
     next(error);
   }
 };
+
+
+
+
+
+// middleware/auth.middleware.js (core logic only)
+

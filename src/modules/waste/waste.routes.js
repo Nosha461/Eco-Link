@@ -9,7 +9,7 @@ const router = express.Router();
 router.get('/', wasteController.list);
 router.get('/:id', wasteController.getOne);
 
-router.post('/', isAuthenticated, validateRequest(validateCreateWaste), wasteController.create);
+router.post('/addwaste', isAuthenticated, validateRequest(validateCreateWaste), wasteController.create);
 router.patch('/:id', isAuthenticated, validateRequest(validateUpdateWaste), wasteController.update);
 router.delete('/:id', isAuthenticated, wasteController.remove);
 

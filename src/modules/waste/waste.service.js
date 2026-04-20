@@ -2,7 +2,7 @@ import { Waste } from '../../DB/models/waste.model.js';
 import { WasteCategory } from '../../DB/models/wasteCategory.model.js';
 import { ensureFactoryForUser } from '../factories/factories.service.js';
 
-export const createWaste = async (user, payload) => {
+export const addWaste = async (user, payload) => {
   const factory = await ensureFactoryForUser(user);
 
   const category = await WasteCategory.findById(payload.categoryId);
@@ -68,3 +68,5 @@ export const deleteWaste = async (user, wasteId) => {
   return { success: true };
 };
 
+
+// test git hub
